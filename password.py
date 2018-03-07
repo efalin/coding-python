@@ -1,17 +1,20 @@
 from random import randint
-happened = False
+goodanswer = False
 password = randint(1, 100)
 print("SECURE LOGIN SYSTEM")
-answer = float( input("Enter Password: " ) )
 
-if answer > password:
 
-print("Access Denied – Your entry was too high")
-answer = float( input("Enter Password: " ) )
+while not goodanswer
 
-if answer < password:
-	print("Access Denied – Your entry was too low")
-	answer = float( input("Enter Password: " ) )
+	answer = int( input("Enter Password: " ) )
+	if answer > password:
+	print("Access Denied – Your entry was too high")
+	elif answer < password
+	answer < password print("Access Denied – Your entry was too low")
+
+else:
+	print("Access Granted")
+
 
 
 

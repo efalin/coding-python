@@ -6,14 +6,15 @@ print("SECURE LOGIN SYSTEM")
 
 while not goodanswer:
 	answer = int( input("Enter Password: " ) )
-	
+
 	if answer > password:
 		print("Access Denied – Your entry was too high")
 	elif answer < password:
 		print("Access Denied – Your entry was too low")
 
-else:
-	print("Access Granted")
+	else:
+		goodanswer = True
+		print("Access Granted")
 
 
 

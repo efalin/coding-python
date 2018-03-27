@@ -5,7 +5,7 @@ def getCommand():
 	return command
 
 def listOfCommands():
-	print("Here is a list of commands you can use: Raise Shields, Fire Missiles, Contact Avengers, Contact SHIELD, Exit Program")
+	print("Here is a list of commands you can use: Raise Shields, Fire Missiles, Contact Avengers, Contact SHIELD, Make a Sandwich, Exit Program")
 
 def raiseShields(): 
 	print("The perimeter shields have been raised")
@@ -23,6 +23,9 @@ def contactAvengers():
 def contactSHIELD():
 	print("If you say so. SHIELD is being informed")
 
+def sandwich():
+	print("That's a really stupid idea. But you're the boss")
+
 
 while True:
 	command = getCommand()
@@ -31,6 +34,8 @@ while True:
 		raiseShields()
 	elif command.lower() == "fire missiles":
 		fireMissiles()
+	elif command.lower() == "make a sandwich":
+		sandwich()
 	elif command.lower() == "exit program":
 		exitProgram()
 	elif command.lower() == "contact avengers":
